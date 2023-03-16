@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-gry: hsl(217, 12%, 63%);
+  --medium-gry: hsl(214, 16%, 26%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --v-dark-blue: hsl(216, 12%, 8%);
+  font-family: "overpass";
+  font-size: 62.5%;
+}
+.starContianer {
+  background-color: transparent !important;
+}
+span {
+  color: var(--orange);
+  background-color: var(--medium-gry);
+  padding: 0.7rem 2rem;
+  width: 62.5%;
+  border-radius: 2rem;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-1rem);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(1rem);
+  }
+}
+
+.container {
+  align-items: center !important;
+  animation: shake 1s linear !important;
+}
+.paContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+p {
+  text-align: center;
+}
+img {
+  animation: shake 15s linear infinite !important;
+}
